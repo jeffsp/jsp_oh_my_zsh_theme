@@ -5,6 +5,8 @@
 local ret_status="%(?:%{$fg_bold[green]%}●:%{$fg_bold[red]%}●%s)"
 PROMPT='%{$reset_color%}%{$bg[yellow]%}%{$fg[black]%}[%@] %m%{$reset_color%} ${ret_status}%{$fg_bold[white]%} %~ $(git_prompt_info)%{$fg_bold[white]%}▶%{$reset_color%} '
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[white]%}git:("
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[white]%})%{$fg_bold[black]%}%{$bg_bold[red]%}⨯%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[white]%})%{$fg_bold[black]%}%{$bg_bold[green]%}✓%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[white]%})%{$fg_bold[red]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[white]%})%{$fg_bold[green]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
